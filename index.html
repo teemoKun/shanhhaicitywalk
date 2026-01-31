@@ -1,0 +1,1862 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>上海春节Citywalk路线规划方案：15条精选路线探索城市魅力</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Noto Serif SC', 'serif'],
+                        'sans': ['Noto Sans SC', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#2d3748',
+                        accent: '#e53e3e',
+                        sage: '#68d391',
+                        stone: '#a0aec0',
+                        cream: '#fef7ed',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        .toc-sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 320px;
+            height: 100vh;
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 2rem 1.5rem;
+            color: white;
+            box-shadow: 4px 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .content-main {
+            margin-left: 320px;
+            min-height: 100vh;
+        }
+        
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            align-items: center;
+            min-height: 60vh;
+        }
+        
+        .bento-card {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .toc-link {
+            display: block;
+            padding: 0.75rem 1rem;
+            margin: 0.25rem 0;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: rgba(255,255,255,0.8);
+            border-left: 3px solid transparent;
+        }
+        
+        .toc-link:hover {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border-left-color: #68d391;
+            transform: translateX(4px);
+        }
+        
+        .toc-link.active {
+            background: rgba(104, 211, 145, 0.2);
+            color: white;
+            border-left-color: #68d391;
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #68d391, transparent);
+            margin: 3rem 0;
+        }
+        
+        @media (max-width: 1024px) {
+            .toc-sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .toc-sidebar.open {
+                transform: translateX(0);
+            }
+            
+            .content-main {
+                margin-left: 0;
+            }
+            
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-grid h1 {
+                font-size: 2.5rem;
+                line-height: 1.2;
+            }
+            .hero-grid p.text-xl {
+                font-size: 1.125rem;
+                line-height: 1.5;
+            }
+            .bento-card {
+                padding: 1.5rem;
+            }
+            .hero-grid .grid.grid-cols-2 {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+    </style>
+  <base target="_blank">
+</head>
+
+  <body class="bg-cream font-sans text-secondary">
+    <!-- Table of Contents Sidebar -->
+    <nav class="toc-sidebar">
+      <div class="mb-8">
+        <h2 class="text-xl font-serif font-bold text-white mb-4">目录导航</h2>
+        <div class="w-16 h-1 bg-gradient-to-r from-sage to-transparent mb-6"></div>
+      </div>
+
+      <div class="space-y-2">
+        <a href="#executive-summary" class="toc-link text-sm">
+          <i class="fas fa-star w-4 mr-2"></i>执行摘要
+        </a>
+        <a href="#core-requirements" class="toc-link text-sm">
+          <i class="fas fa-cog w-4 mr-2"></i>核心需求分析
+        </a>
+        <a href="#key-areas" class="toc-link text-sm">
+          <i class="fas fa-map-marked-alt w-4 mr-2"></i>重点区域梳理
+        </a>
+        <a href="#thematic-integration" class="toc-link text-sm">
+          <i class="fas fa-puzzle-piece w-4 mr-2"></i>主题元素整合
+        </a>
+        <a href="#route-details" class="toc-link text-sm">
+          <i class="fas fa-route w-4 mr-2"></i>15条路线详案
+        </a>
+        <a href="#decision-support" class="toc-link text-sm">
+          <i class="fas fa-chart-line w-4 mr-2"></i>路线选择决策
+        </a>
+        <a href="#practical-info" class="toc-link text-sm">
+          <i class="fas fa-info-circle w-4 mr-2"></i>实用信息附录
+        </a>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-white/20">
+        <p class="text-xs text-white/60 mb-2">基于上海春节Citywalk路线规划方案</p>
+        <p class="text-xs text-white/40">15条精选路线探索城市魅力</p>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content-main">
+      <!-- Hero Section -->
+      <section class="relative bg-gradient-to-br from-primary via-secondary to-primary overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative z-10 container mx-auto px-4 md:px-8 py-16">
+          <div class="hero-grid">
+            <div class="space-y-8">
+              <div class="space-y-4">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight break-words">
+                  上海春节
+                  <span class="block italic text-sage">Citywalk</span>
+                  路线规划方案
+                </h1>
+                <p class="text-lg md:text-xl text-white/80 max-w-2xl leading-relaxed break-words">
+                  基于北蔡基地，15条精选路线探索生态建设、历史文化与流行文化的城市魅力
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bento-card">
+                  <div class="flex items-center mb-3">
+                    <i class="fas fa-leaf text-sage text-xl mr-3"></i>
+                    <h3 class="font-serif font-semibold text-primary">生态建设</h3>
+                  </div>
+                  <p class="text-sm text-stone">楔形绿地观察窗口，13条生境花园路线借鉴</p>
+                </div>
+
+                <div class="bento-card">
+                  <div class="flex items-center mb-3">
+                    <i class="fas fa-building text-accent text-xl mr-3"></i>
+                    <h3 class="font-serif font-semibold text-primary">历史文化</h3>
+                  </div>
+                  <p class="text-sm text-stone">外滩万国建筑，法租界风貌保护</p>
+                </div>
+
+                <div class="bento-card">
+                  <div class="flex items-center mb-3">
+                    <i class="fas fa-heart text-pink-500 text-xl mr-3"></i>
+                    <h3 class="font-serif font-semibold text-primary">流行文化</h3>
+                  </div>
+                  <p class="text-sm text-stone">Chikawa旗舰店，网红街区打卡</p>
+                </div>
+
+                <div class="bento-card">
+                  <div class="flex items-center mb-3">
+                    <i class="fas fa-mountain text-blue-500 text-xl mr-3"></i>
+                    <h3 class="font-serif font-semibold text-primary">独特体验</h3>
+                  </div>
+                  <p class="text-sm text-stone">双子山人工山体，上海唯一登山体验</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <img src="https://kimi-web-img.moonshot.cn/img/static.oeeee.com/80bf5b9e5e069f48230c95d07dc4f9cfcdb762d1.jpg" alt="上海城市天际线景观" class="w-full h-80 object-cover rounded-2xl shadow-2xl" size="medium" aspect="wide" style="photo" query="上海天际线" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-2xl"></div>
+              <div class="absolute bottom-4 left-4 text-white">
+                <p class="text-sm font-medium">15条路线 · 10,000-25,000步</p>
+                <p class="text-xs opacity-80">空气质量响应机制 · 三级体力分级</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Executive Summary -->
+      <section id="executive-summary" class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-8 max-w-6xl">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-serif font-bold text-primary mb-4">执行摘要</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-sage to-transparent mx-auto"></div>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-sage/10 p-6 rounded-xl">
+              <h3 class="font-serif font-semibold text-primary mb-3">核心定位</h3>
+              <p class="text-stone text-sm leading-relaxed">
+                基于北蔡基地和15条路线需求，设计覆盖生态建设、历史文化、流行文化的春节Citywalk方案。每条路线步数控制在10,000-25,000步，优先选择公园、绿地、滨江等步行友好空间。
+              </p>
+            </div>
+
+            <div class="bg-accent/10 p-6 rounded-xl">
+              <h3 class="font-serif font-semibold text-primary mb-3">独特亮点</h3>
+              <ul class="text-stone text-sm space-y-2">
+                <li>• 楔形绿地建设观察（独家时效窗口）</li>
+                <li>• 双子山人工山体（上海唯一）</li>
+                <li>• Chikawa旗舰店（2025年9月新开）</li>
+                <li>• 13条官方生境花园路线借鉴</li>
+              </ul>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-xl">
+              <h3 class="font-serif font-semibold text-primary mb-3">执行框架</h3>
+              <p class="text-stone text-sm leading-relaxed mb-3">
+                采用&#34;3+2+1&#34;执行框架：3条高置信度路线作为核心保障，2条中等置信度路线作为主题拓展，1条探索性路线根据实时兴趣选择。
+              </p>
+              <p class="text-stone text-sm">
+                配合空气质量响应机制和三级体力分级系统，确保运动目标达成与体验深度平衡。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Core Requirements -->
+      <section id="core-requirements" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8 max-w-6xl">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-serif font-bold text-primary mb-4">核心需求与约束条件</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-sage to-transparent mx-auto"></div>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12">
+            <div class="space-y-8">
+              <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-xl font-serif font-semibold text-primary mb-4 flex items-center">
+                  <i class="fas fa-clock text-sage mr-3"></i>时间与地点参数
+                </h3>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-sage pl-4">
+                    <h4 class="font-medium text-secondary mb-2">抵达时间</h4>
+                    <p class="text-stone text-sm">2026年2月2日早晨，上海浦东。处于&#34;小年&#34;前后，外来人口返乡导致中心城区人流下降、交通改善。</p>
+                  </div>
+                  <div class="border-l-4 border-accent pl-4">
+                    <h4 class="font-medium text-secondary mb-2">活动基地</h4>
+                    <p class="text-stone text-sm">北蔡镇位于&#34;金色中环发展带&#34;关键节点，地铁7号线、13号线、18号线三线交汇，30分钟通勤圈覆盖浦东核心功能区。</p>
+                  </div>
+                  <div class="border-l-4 border-blue-500 pl-4">
+                    <h4 class="font-medium text-secondary mb-2">活动周期</h4>
+                    <p class="text-stone text-sm">春节期间，空气质量优良日出行。上海全年空气质量优良率达88.5%，建议AQI≤100且PM2.5≤75μg/m³为出行标准。</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-xl font-serif font-semibold text-primary mb-4 flex items-center">
+                  <i class="fas fa-running text-sage mr-3"></i>运动量目标
+                </h3>
+                <div class="space-y-4">
+                  <div class="bg-sage/10 p-4 rounded-lg">
+                    <h4 class="font-medium text-secondary mb-2">单次步数范围</h4>
+                    <p class="text-stone text-sm mb-2">10,000–25,000步（约6–17.5公里）</p>
+                    <p class="text-xs text-stone/70">实际Citywalk因观光停留、拍照、就餐等活动，有效移动距离约为理论值的60–70%</p>
+                  </div>
+                  <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-medium text-secondary mb-2">执行频率</h4>
+                    <p class="text-stone text-sm">每日备选，采用&#34;3+2+1&#34;执行框架：3条高置信度路线作为核心保障，2条中等置信度路线作为主题拓展，1条探索性路线根据实时兴趣选择。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-8">
+              <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-xl font-serif font-semibold text-primary mb-4 flex items-center">
+                  <i class="fas fa-map-signs text-sage mr-3"></i>路线设计原则
+                </h3>
+                <div class="space-y-6">
+                  <div class="border border-sage/20 p-4 rounded-lg">
+                    <h4 class="font-medium text-secondary mb-3 flex items-center">
+                      <i class="fas fa-tree text-sage mr-2"></i>步行友好区域优先
+                    </h4>
+                    <ul class="text-stone text-sm space-y-1">
+                      <li>• 黄浦江45公里滨江公共空间贯通</li>
+                      <li>• 苏州河42公里岸线开放</li>
+                      <li>• &#34;千园工程&#34;推进中（计划新建绿地5000公顷）</li>
+                      <li>• 24座望江驿驿站系统（间距约1公里）</li>
+                    </ul>
+                  </div>
+
+                  <div class="border border-accent/20 p-4 rounded-lg">
+                    <h4 class="font-medium text-secondary mb-3 flex items-center">
+                      <i class="fas fa-search text-accent mr-2"></i>特定探索主题
+                    </h4>
+                    <div class="grid grid-cols-2 gap-2 text-stone text-sm">
+                      <div>• 生态建设：楔形绿地、生境花园</div>
+                      <div>• 历史文化：优秀历史建筑</div>
+                      <div>• 特色小吃：老字号与新派店铺</div>
+                      <div>• 流行文化：IP消费空间</div>
+                    </div>
+                  </div>
+
+                  <div class="border border-blue-200 p-4 rounded-lg">
+                    <h4 class="font-medium text-secondary mb-3 flex items-center">
+                      <i class="fas fa-globe text-blue-500 mr-2"></i>覆盖指定区域
+                    </h4>
+                    <p class="text-stone text-sm">覆盖9个空间单元：北蔡楔形绿地、花木-龙阳路-世纪公园-博物馆、双子山-世博滨江、豫园-南京路、北外滩、法租界、花桥、五角场、徐家汇。</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-sage/10 to-blue-50 p-8 rounded-xl">
+                <h3 class="text-xl font-serif font-semibold text-primary mb-4">步数与运动量对照表</h3>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm">
+                    <thead>
+                      <tr class="border-b border-sage/20">
+                        <th class="text-left py-2 text-secondary">步数目标</th>
+                        <th class="text-left py-2 text-secondary">估算距离</th>
+                        <th class="text-left py-2 text-secondary">运动时间</th>
+                        <th class="text-left py-2 text-secondary">热量消耗</th>
+                        <th class="text-left py-2 text-secondary">适用场景</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-stone">
+                      <tr class="border-b border-gray-100">
+                        <td class="py-2 font-medium">10,000步</td>
+                        <td>6–7公里</td>
+                        <td>1.5–2小时</td>
+                        <td>280–350千卡</td>
+                        <td class="text-sage font-medium">轻松恢复日</td>
+                      </tr>
+                      <tr class="border-b border-gray-100">
+                        <td class="py-2 font-medium">15,000步</td>
+                        <td>9–10公里</td>
+                        <td>2–2.5小时</td>
+                        <td>420–525千卡</td>
+                        <td class="text-blue-600 font-medium">标准训练日</td>
+                      </tr>
+                      <tr class="border-b border-gray-100">
+                        <td class="py-2 font-medium">20,000步</td>
+                        <td>12–13公里</td>
+                        <td>2.5–3.5小时</td>
+                        <td>560–700千卡</td>
+                        <td class="text-accent font-medium">挑战突破日</td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 font-medium">25,000步</td>
+                        <td>16–17公里</td>
+                        <td>3.5–4.5小时</td>
+                        <td>700–875千卡</td>
+                        <td class="text-red-600 font-medium">极限挑战日</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Key Areas -->
+      <section id="key-areas" class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-8 max-w-6xl">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-serif font-bold text-primary mb-4">用户指定必访区域梳理</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-sage to-transparent mx-auto"></div>
+          </div>
+
+          <div class="space-y-12">
+            <!-- 浦东核心区域 -->
+            <div class="bg-gradient-to-r from-sage/5 to-transparent p-8 rounded-xl">
+              <h3 class="text-2xl font-serif font-semibold text-primary mb-6 flex items-center">
+                <i class="fas fa-map-marker-alt text-sage mr-3"></i>浦东核心区域（近北蔡）
+              </h3>
+
+              <div class="grid lg:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                  <h4 class="text-lg font-medium text-secondary border-b border-sage/20 pb-2">北蔡楔形绿地</h4>
+                  <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="text-stone text-sm mb-3">上海市十片楔形绿地之一，属于&#34;环内&#34;加快推进的五个项目之一。用户2026年2月探访时，将亲历从规划图纸到实体空间的转化过程。</p>
+                    <div class="space-y-2 text-xs text-stone">
+                      <div class="flex justify-between">
+                        <span>规划面积（B片区）</span>
+                        <span class="font-medium">2.56平方公里</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span>绿地面积</span>
+                        <span class="font-medium">131.22公顷</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span>森林覆盖率</span>
+                        <span class="font-medium">50%</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span>慢行系统密度</span>
+                        <span class="font-medium">≥14km/km²</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-sage/10 p-3 rounded-lg">
+                    <p class="text-xs text-stone"><strong>观察要点：</strong>空间尺度与周边社区界面、口袋公园覆盖率、乡土树种配置、林冠层连续性、绿道立体交叉设计。</p>
+                  </div>
+                </div>
+
+                <div class="space-y-4">
+                  <h4 class="text-lg font-medium text-secondary border-b border-sage/20 pb-2">花木-龙阳路-世纪公园</h4>
+                  <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="text-stone text-sm mb-3">浦东行政文化与生态休闲的复合核心。世纪公园（140.3公顷）是上海内环线内最大生态公园，2021年起免费开放。</p>
+                    <div class="space-y-2">
+                      <div class="bg-blue-50 p-2 rounded text-xs">
+                        <strong>世纪公园：</strong>环湖主步道约5.2公里，冬季可观察蜡梅、茶梅
+                      </div>
+                      <div class="bg-green-50 p-2 rounded text-xs">
+                        <strong>龙阳路枢纽：</strong>全球首个五线换乘站，城市更新典型案例
+                      </div>
+                      <div class="bg-yellow-50 p-2 rounded text-xs">
+                        <strong>文化设施：</strong>上海科技馆（改造中）、上海博物馆东馆（2024.2试开放）
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-4">
+                  <h4 class="text-lg font-medium text-secondary border-b border-sage/20 pb-2">双子山-世博滨江</h4>
+                  <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="text-stone text-sm mb-3">上海中心城区唯一人工山体，主峰48米、次峰37米，采用PEC结构技术，将建筑渣土资源化利用。</p>
+                    <div class="bg-accent/10 p-3 rounded-lg mb-3">
+                      <p class="text-sm font-medium text-accent mb-1">关键运营信息</p>
+                      <p class="text-xs text-stone">通过&#34;上海世博文化公园&#34;微信小程序提前1天预约，每日10:00开放次日名额，推荐14:00-16:00时段。</p>
+                    </div>
+                    <div class="text-xs text-stone space-y-1">
+                      <div>• 世博滨江段保留2010世博会工业遗存</div>
+                      <div>• 后滩公园人工湿地系统展示&#34;海绵城市&#34;实践</div>
+                      <div>• 冬季江风凛冽，体感温度低3-5℃</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 浦西经典区域 -->
+            <div class="bg-gradient-to-r from-accent/5 to-transparent p-8 rounded-xl">
+              <h3 class="text-2xl font-serif font-semibold text-primary mb-6 flex items-center">
+                <i class="fas fa-landmark text-accent mr-3"></i>浦西经典区域
+              </h3>
+
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                  <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-medium text-secondary mb-4">豫园-南京路</h4>
+                    <p class="text-stone text-sm mb-4">豫园（1559年建）与城隍庙区域正经历文旅融合转型，2025年春节&#34;山海奇豫记&#34;灯会融合AR互动与非遗技艺。</p>
+                    <div class="bg-pink-50 p-4 rounded-lg">
+                      <h5 class="font-medium text-secondary mb-2">Chikawa旗舰店亮点</h5>
+                      <ul class="text-xs text-stone space-y-1">
+                        <li>• 南京东路139号外滩中央广场</li>
+                        <li>• 中国内地首家线下官方旗舰店</li>
+                        <li>• 上海限定主题区（大闸蟹、旗袍形象）</li>
+                        <li>• 3米高巨型乌萨奇装置</li>
+                        <li>• 抓娃娃机、大头贴拍照机</li>
+                      </ul>
+                      <p class="text-xs text-accent mt-2"><strong>建议：</strong>工作日上午10:00-11:00到访，预留1-1.5小时</p>
+                    </div>
+                  </div>
+
+                  <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-medium text-secondary mb-4">北外滩</h4>
+                    <p class="text-stone text-sm mb-4">与外滩、陆家嘴形成&#34;黄金三角&#34;，差异化价值在于观看外滩的反向视角和工业遗存与新建商务楼宇的并置。</p>
+                    <div class="grid grid-cols-2 gap-2 text-xs text-stone">
+                      <div class="bg-gray-50 p-2 rounded">上海邮政博物馆（1924年）</div>
+                      <div class="bg-gray-50 p-2 rounded">外白渡桥（1907年）</div>
+                      <div class="bg-gray-50 p-2 rounded">魔都矩阵户外娱乐</div>
+                      <div class="bg-gray-50 p-2 rounded">白玉兰广场（320米）</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-medium text-secondary mb-4">法租界（衡复风貌区）</h4>
+                    <p class="text-stone text-sm mb-4">面积4.3平方公里，拥有优秀历史建筑231处，是上海规模最大、保护最完整的历史文化风貌区。</p>
+                    <div class="space-y-3">
+                      <div class="bg-sage/10 p-3 rounded-lg">
+                        <p class="text-xs font-medium text-secondary">空间特征</p>
+                        <p class="text-xs text-stone">&#34;三横三纵&#34;路网，85%以上法国梧桐行道树覆盖率</p>
+                      </div>
+                      <div class="bg-blue-50 p-3 rounded-lg">
+                        <p class="text-xs font-medium text-secondary">官方路线</p>
+                        <p class="text-xs text-stone">&#34;音符与生境的激情碰撞&#34;&#34;繁花与街巷的浪漫交响&#34;</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-medium text-secondary mb-4">徐家汇源</h4>
+                    <p class="text-stone text-sm mb-4">&#34;海派文化源&#34;定位基于徐光启与利玛窦的跨文化合作，拥有圣依纳爵主教座堂、徐家汇藏书楼等历史层积。</p>
+                    <div class="bg-gradient-to-r from-blue-50 to-sage/10 p-3 rounded-lg">
+                      <p class="text-xs font-medium text-secondary mb-1">2025年12月发布</p>
+                      <p class="text-xs text-stone">&#34;城市博物行&#34;CityHike线路，串联书院广场、东方商厦、百代小楼等节点</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 扩展区域 -->
+            <div class="bg-gradient-to-r from-blue-50 to-transparent p-8 rounded-xl">
+              <h3 class="text-2xl font-serif font-semibold text-primary mb-6 flex items-center">
+                <i class="fas fa-expand-arrows-alt text-blue-500 mr-3"></i>扩展区域
+              </h3>
+
+              <div class="grid lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 class="text-lg font-medium text-secondary mb-3">花桥</h4>
+                  <p class="text-stone text-sm mb-3">隶属江苏省昆山市，地铁11号线跨省延伸首站，观察&#34;沪苏同城化&#34;典型样本。</p>
+                  <div class="space-y-2 text-xs text-stone">
+                    <div class="bg-gray-50 p-2 rounded">15分钟步行圈生活配套</div>
+                    <div class="bg-gray-50 p-2 rounded">地铁通勤实测（约50分钟至徐家汇）</div>
+                    <div class="bg-gray-50 p-2 rounded">跨省基础设施标准差异</div>
+                  </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 class="text-lg font-medium text-secondary mb-3">五角场</h4>
+                  <p class="text-stone text-sm mb-3">&#34;高校驱动&#34;特征，复旦大学、同济大学等形成知识密集区，催生大学路等特色空间。</p>
+                  <div class="space-y-2 text-xs text-stone">
+                    <div class="bg-sage/10 p-2 rounded">江湾体育场（1935年，&#34;大上海计划&#34;遗存）</div>
+                    <div class="bg-sage/10 p-2 rounded">大学路&#34;限时步行街&#34;改造</div>
+                    <div class="bg-sage/10 p-2 rounded">创智天地开放式园区设计</div>
+                  </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 class="text-lg font-medium text-secondary mb-3">陆家嘴</h4>
+                  <p class="text-stone text-sm mb-3">金融中心天际线，摩天大楼群的多维感知体验。</p>
+                  <div class="space-y-2 text-xs text-stone">
+                    <div class="bg-blue-50 p-2 rounded">上海中心118层（180元）</div>
+                    <div class="bg-blue-50 p-2 rounded">环球金融中心100层（150元）</div>
+                    <div class="bg-blue-50 p-2 rounded">金茂大厦88层（120元）</div>
+                    <div class="bg-blue-50 p-2 rounded">东方明珠（180元）</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Thematic Integration -->
+      <section id="thematic-integration" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8 max-w-6xl">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-serif font-bold text-primary mb-4">主题元素整合</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-sage to-transparent mx-auto"></div>
+          </div>
+
+          <div class="space-y-12">
+            <!-- 生态建设主题 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <h3 class="text-2xl font-serif font-semibold text-primary mb-6 flex items-center">
+                <i class="fas fa-seedling text-sage mr-3"></i>生态建设主题
+              </h3>
+
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                  <div class="bg-sage/10 p-6 rounded-lg">
+                    <h4 class="text-lg font-medium text-secondary mb-4">楔形绿地慢行系统</h4>
+                    <div class="space-y-3">
+                      <div class="bg-white p-3 rounded border-l-4 border-sage">
+                        <p class="font-medium text-secondary text-sm">北蔡楔形绿地A片区</p>
+                        <p class="text-xs text-stone">约5.8公里慢行步道和自行车道，90%绿荫覆盖率</p>
+                      </div>
+                      <div class="bg-white p-3 rounded border-l-4 border-blue-500">
+                        <p class="font-medium text-secondary text-sm">B片区步行网络</p>
+                        <p class="text-xs text-stone">密度≥14km/km²，新建支路林荫道占比≥65%，绿道≥80%</p>
+                      </div>
+                    </div>
+                    <div class="mt-4 bg-yellow-50 p-3 rounded">
+                      <p class="text-xs text-stone"><strong>实测方法：</strong>携带GPS轨迹记录设备，验证官方数据实际达成度；简易测量微气候效应。</p>
+                    </div>
+                  </div>
+
+                  <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-medium text-secondary mb-3">环城生态公园带</h4>
+                    <p class="text-stone text-sm mb-3">上海&#34;十四五&#34;规划明确：外环绿带&#34;一大环&#34;（100公里绿道，50处以上公园）、五个新城&#34;五小环&#34;、十个楔形绿地&#34;多楔&#34;。</p>
+                    <div class="bg-white p-3 rounded">
+                      <p class="text-xs text-stone">北蔡楔形绿地处于&#34;环内&#34;与&#34;环上&#34;交汇节点，建设进度直接影响区域生态服务功能发挥。</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="bg-white p-6 rounded-lg border border-sage/20">
+                    <h4 class="text-lg font-medium text-secondary mb-4">生境花园网络</h4>
+                    <p class="text-stone text-sm mb-4">2025年12月，上海市绿化市容局发布首批13条生境花园Citywalk路线，体现&#34;城市生物多样性&#34;理念落地。</p>
+
+                    <div class="space-y-3">
+                      <div class="bg-sage/5 p-3 rounded-lg">
+                        <h5 class="font-medium text-secondary text-sm mb-2">浦东区域路线</h5>
+                        <div class="space-y-2 text-xs text-stone">
+                          <div class="flex justify-between">
+                            <span>滨江生态画廊漫游</span>
+                            <span class="text-sage font-medium">约8公里</span>
+                          </div>
+                          <div class="flex justify-between">
+                            <span>栖影寻踪—金海湿地公园</span>
+                            <span class="text-sage font-medium">约6公里</span>
+                          </div>
+                          <div class="flex justify-between">
+                            <span>锦绣生境栖游</span>
+                            <span class="text-accent font-medium">约2公里</span>
+                          </div>
+                          <div class="flex justify-between">
+                            <span>东岸生境·时光织锦</span>
+                            <span class="text-sage font-medium">约5公里</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="bg-blue-50 p-3 rounded-lg">
+                        <h5 class="font-medium text-secondary text-sm mb-2">徐汇区域路线</h5>
+                        <div class="space-y-1 text-xs text-stone">
+                          <div>• 音符与生境的激情碰撞（约5公里）</div>
+                          <div>• 繁花与街巷的浪漫交响（约6公里）</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mt-4 bg-gradient-to-r from-sage/10 to-blue-50 p-3 rounded">
+                      <p class="text-xs text-stone"><strong>关联价值：</strong>&#34;锦绣生境栖游&#34;紧邻北蔡，地铁7号线1站可达，体现本土植物使用率≥70%、农药化肥控制、野生动物友好设施等理念。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 历史文化主题 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <h3 class="text-2xl font-serif font-semibold text-primary mb-6 flex items-center">
+                <i class="fas fa-landmark text-accent mr-3"></i>历史文化主题
+              </h3>
+
+              <div class="grid lg:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                  <h4 class="text-lg font-medium text-secondary border-b border-accent/20 pb-2">外滩万国建筑博览群</h4>
+                  <div class="bg-accent/5 p-4 rounded-lg">
+                    <p class="text-stone text-sm mb-3">外滩52栋历史建筑构成近代建筑史的完整序列，从古典主义到Art Deco再到现代主义。</p>
+                    <div class="space-y-2 text-xs text-stone">
+                      <div class="bg-white p-2 rounded border-l-4 border-yellow-400">
+                        <strong>1890s–1910s 古典主义：</strong>汇丰银行大楼（1923），八角形穹顶、马赛克壁画
+                      </div>
+                      <div class="bg-white p-2 rounded border-l-4 border-red-400">
+                        <strong>1920s–1930s Art Deco：</strong>沙逊大厦/和平饭店（1929），墨绿色铜顶
+                      </div>
+                      <div class="bg-white p-2 rounded border-l-4 border-blue-400">
+                        <strong>1930s–1940s 现代主义：</strong>中国银行大楼（1937），中国传统元素融合
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-blue-50 p-3 rounded">
+                    <p class="text-xs text-stone"><strong>观察方法：</strong>立面细部五层次系统：基座→柱式→窗套→檐口→屋顶</p>
+                  </div>
+                </div>
+
+                <div class="space-y-4">
+                  <h4 class="text-lg font-medium text-secondary border-b border-accent/20 pb-2">法租界优秀历史建筑</h4>
+                  <div class="space-y-3">
+                    <div class="bg-white p-3 rounded border">
+                      <h5 class="font-medium text-secondary text-sm mb-1">花园住宅</h5>
+                      <p class="text-xs text-stone">思南路周公馆、孙中山故居 → 纪念馆/私人住宅</p>
+                      <p class="text-xs text-stone/70 mt-1">观察：复原陈列历史准确性、围墙高度变化</p>
+                    </div>
+                    <div class="bg-white p-3 rounded border">
+                      <h5 class="font-medium text-secondary text-sm mb-1">公寓建筑</h5>
+                      <p class="text-xs text-stone">武康大楼、黑石公寓 → 商业综合体/创意办公</p>
+                      <p class="text-xs text-stone/70 mt-1">观察：保护性修缮技术细节</p>
+                    </div>
+                    <div class="bg-white p-3 rounded border">
+                      <h5 class="font-medium text-secondary text-sm mb-1">新式里弄</h5>
+                      <p class="text-xs text-stone">步高里、建业里 → 居民住宅/底层商业</p>
+                      <p class="text-xs text-stone/70 mt-1">观察：业态迭代与绅士化效应</p>
+                    </div>
+                  </div>
+                  <div class="bg-yellow-50 p-3 rounded">
+                    <p class="text-xs text-stone"><strong>更新模式案例：</strong>新天地&#34;保留外皮、改造内部&#34;策略，对比北里与南里的空间体验差异。</p>
+                  </div>
+                </div>
+
+                <div class="space-y-4">
+                  <h4 class="text-lg font-medium text-secondary border-b border-accent/20 pb-2">徐家汇源</h4>
+                  <div class="bg-sage/10 p-4 rounded-lg">
+                    <p class="text-stone text-sm mb-3">三层历史层积：徐光启–利玛窦学术合作（1600年代）→江南传教区建立（1840年代）→当代宗教活动与旅游参观共存。</p>
+                    <div class="space-y-2">
+                      <div class="bg-white p-2 rounded text-xs text-stone">
+                        <strong>圣依纳爵主教座堂（1910年）：</strong>远东最大天主教堂
+                      </div>
+                      <div class="bg-white p-2 rounded text-xs text-stone">
+                        <strong>徐家汇书院（2023年）：</strong>戴卫·奇普菲尔德设计，&#34;中国书架&#34;意象
+                      </div>
+                      <div class="bg-white p-2 rounded text-xs text-stone">
+                        <strong>徐家汇藏书楼（1847年）：</strong>中国最早现代图书馆
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-blue-50 p-3 rounded">
+                    <p class="text-xs text-stone"><strong>空间对话：</strong>徐家汇书院与圣依纳爵主教座堂体现&#34;当代性&#34;与&#34;历史语境&#34;的协调</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 商业与流行文化主题 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <h3 class="text-2xl font-serif font-semibold text-primary mb-6 flex items-center">
+                <i class="fas fa-shopping-bag text-pink-500 mr-3"></i>商业与流行文化主题
+              </h3>
+
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                  <div class="bg-pink-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-medium text-secondary mb-4">Chikawa毛绒玩具空间政治学</h4>
+                    <p class="text-stone text-sm mb-4">南京东路139号外滩中央广场，中国内地首家线下官方旗舰店，两层结构约800平方米。</p>
+
+                    <div class="space-y-3">
+                      <div class="bg-white p-3 rounded border-l-4 border-pink-400">
+                        <h5 class="font-medium text-secondary text-sm">符号层</h5>
+                        <p class="text-xs text-stone">3米乌萨奇装置、1:1场景还原 → 即时消费驱动、拍照传播激励</p>
+                      </div>
+                      <div class="bg-white p-3 rounded border-l-4 border-red-400">
+                        <h5 class="font-medium text-secondary text-sm">商品层</h5>
+                        <p class="text-xs text-stone">上海限定（大闸蟹、旗袍）、中国限定（舞狮）→ 限定经济、社交货币生产</p>
+                      </div>
+                      <div class="bg-white p-3 rounded border-l-4 border-purple-400">
+                        <h5 class="font-medium text-secondary text-sm">互动层</h5>
+                        <p class="text-xs text-stone">抓娃娃机、大头贴、店员角色扮演 → 沉浸式体验延长、社群运营</p>
+                      </div>
+                    </div>
+
+                    <div class="mt-4 bg-gradient-to-r from-pink-50 to-red-50 p-3 rounded">
+                      <p class="text-xs text-stone"><strong>选址策略：</strong>承接步行街巨量客流+借助外滩地标提升品牌势能，实现&#34;亚文化符号植入主流空间&#34;的破圈意图。</p>
+                    </div>
+                  </div>
+
+                  <div class="bg-orange-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-medium text-secondary mb-4">特色小笼包/生煎寻访</h4>
+                    <div class="space-y-3">
+                      <div class="bg-white p-3 rounded border">
+                        <div class="flex justify-between items-start mb-1">
+                          <h5 class="font-medium text-secondary text-sm">南翔馒头店</h5>
+                          <span class="text-xs text-stone">豫园路87号</span>
+                        </div>
+                        <p class="text-xs text-stone">皮薄汁多，提褶18道以上，蟹粉为招牌</p>
+                        <p class="text-xs text-accent mt-1">⚠️ 豫园店排队极长，品质稳定性存疑</p>
+                      </div>
+                      <div class="bg-white p-3 rounded border">
+                        <div class="flex justify-between items-start mb-1">
+                          <h5 class="font-medium text-secondary text-sm">大壶春</h5>
+                          <span class="text-xs text-stone">四川中路136号</span>
+                        </div>
+                        <p class="text-xs text-stone">清水派代表，皮厚底脆，肉馅紧实</p>
+                        <p class="text-xs text-blue-600 mt-1">💡 与小杨生煎（混水派）风格迥异</p>
+                      </div>
+                      <div class="bg-white p-3 rounded border">
+                        <div class="flex justify-between items-start mb-1">
+                          <h5 class="font-medium text-secondary text-sm">佳家汤包</h5>
+                          <span class="text-xs text-stone">黄河路127号</span>
+                        </div>
+                        <p class="text-xs text-stone">蟹粉鲜肉，现点现蒸</p>
+                        <p class="text-xs text-accent mt-1">⚠️ 黄河路因《繁花》热播客流激增</p>
+                      </div>
+                    </div>
+                    <div class="mt-3 bg-blue-50 p-2 rounded">
+                      <p class="text-xs text-stone"><strong>评价体系：</strong>工艺（面皮制作、馅料调配）-口感-环境（明档厨房、座位舒适度）</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-medium text-secondary mb-4">网红街区打卡</h4>
+                    <div class="space-y-4">
+                      <div class="bg-white p-4 rounded border">
+                        <div class="flex justify-between items-center mb-2">
+                          <h5 class="font-medium text-secondary">安福路</h5>
+                          <span class="text-xs text-stone">&#34;街拍圣地&#34;</span>
+                        </div>
+                        <p class="text-xs text-stone mb-2">Brandy Melville旗舰店、快时尚、独立书店、咖啡馆</p>
+                        <div class="bg-purple-50 p-2 rounded text-xs text-stone">
+                          <strong>最佳时段：</strong>周末下午（人流高峰）
+                        </div>
+                      </div>
+
+                      <div class="bg-white p-4 rounded border">
+                        <div class="flex justify-between items-center mb-2">
+                          <h5 class="font-medium text-secondary">愚园路</h5>
+                          <span class="text-xs text-stone">&#34;艺术介入社区&#34;</span>
+                        </div>
+                        <p class="text-xs text-stone mb-2">故事商店、创意办公、文化展示、社区服务</p>
+                        <div class="bg-blue-50 p-2 rounded text-xs text-stone">
+                          <strong>最佳时段：</strong>工作日下午（静谧体验）
+                        </div>
+                      </div>
+
+                      <div class="bg-white p-4 rounded border">
+                        <div class="flex justify-between items-center mb-2">
+                          <h5 class="font-medium text-secondary">大学路</h5>
+                          <span class="text-xs text-stone">&#34;学术+文创+餐饮&#34;</span>
+                        </div>
+                        <p class="text-xs text-stone mb-2">限时步行街、特色餐饮、独立书店、Livehouse</p>
+                        <div class="bg-green-50 p-2 rounded text-xs text-stone">
+                          <strong>最佳时段：</strong>晚间（夜经济活跃）
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mt-4 bg-gradient-to-r from-purple-100 to-pink-100 p-3 rounded">
+                      <p class="text-xs text-stone"><strong>空间生产逻辑：</strong>社交媒体驱动的场景设计、社交传播、限定经济，体现城市空间生产的后现代转向。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 科技创新主题 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <h3 class="text-2xl font-serif font-semibold text-primary mb-6 flex items-center">
+                <i class="fas fa-microchip text-blue-500 mr-3"></i>科技创新主题
+              </h3>
+
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                  <h4 class="text-lg font-medium text-secondary border-b border-blue-500/20 pb-2">张江科学城</h4>
+                  <div class="bg-blue-50 p-6 rounded-lg">
+                    <p class="text-stone text-sm mb-4">空间演进：1.0阶段（1992–2010）产业园区模式 → 2.0阶段（2010–2020）城市副中心定位 → 3.0阶段（2020至今）&#34;科学城&#34;愿景。</p>
+                    <div class="space-y-3">
+                      <div class="bg-white p-3 rounded border-l-4 border-blue-400">
+                        <h5 class="font-medium text-secondary text-sm">创新街区观察</h5>
+                        <p class="text-xs text-stone">金科路沿线咖啡馆、便利店、健身房配置密度</p>
+                      </div>
+                      <div class="bg-white p-3 rounded border-l-4 border-green-400">
+                        <h5 class="font-medium text-secondary text-sm">绿化设计</h5>
+                        <p class="text-xs text-stone">道路绿化带宽度与植物配置（规整行道树+灌木+草坪）</p>
+                      </div>
+                      <div class="bg-white p-3 rounded border-l-4 border-purple-400">
+                        <h5 class="font-medium text-secondary text-sm">建筑界面</h5>
+                        <p class="text-xs text-stone">建筑退界与围墙设计（企业形象展示vs安全管控）</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-4">
+                  <h4 class="text-lg font-medium text-secondary border-b border-blue-500/20 pb-2">陆家嘴金融城</h4>
+                  <div class="space-y-4">
+                    <div class="bg-white p-4 rounded border">
+                      <h5 class="font-medium text-secondary text-sm mb-2 flex items-center">
+                        <i class="fas fa-eye text-blue-500 mr-2"></i>对岸眺望
+                      </h5>
+                      <p class="text-xs text-stone">外滩、北外滩 → 天际线轮廓整体性、黄浦江弯道纵深感</p>
+                    </div>
+                    <div class="bg-white p-4 rounded border">
+                      <h5 class="font-medium text-secondary text-sm mb-2 flex items-center">
+                        <i class="fas fa-arrow-up text-green-500 mr-2"></i>街道仰视
+                      </h5>
+                      <p class="text-xs text-stone">陆家嘴环路 → 垂直尺度压迫感、建筑细部可读性</p>
+                    </div>
+                    <div class="bg-white p-4 rounded border">
+                      <h5 class="font-medium text-secondary text-sm mb-2 flex items-center">
+                        <i class="fas fa-mountain text-purple-500 mr-2"></i>高空俯瞰
+                      </h5>
+                      <p class="text-xs text-stone">上海中心118层、环球金融中心100层 → 城市肌理认知重构</p>
+                    </div>
+                  </div>
+
+                  <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg">
+                    <h5 class="font-medium text-secondary text-sm mb-2">摩天大楼观赏价值对比</h5>
+                    <div class="space-y-1 text-xs text-stone">
+                      <div class="flex justify-between">
+                        <span>上海中心118层</span>
+                        <span class="text-accent font-medium">180元</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span>环球金融中心100层</span>
+                        <span class="text-orange-600 font-medium">150元</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span>金茂大厦88层</span>
+                        <span class="text-blue-600 font-medium">120元</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span>东方明珠</span>
+                        <span class="text-accent font-medium">180元</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Route Details -->
+      <section id="route-details" class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-8 max-w-7xl">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-serif font-bold text-primary mb-4">15条备选路线详案</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-sage to-transparent mx-auto"></div>
+            <p class="text-stone mt-4">每条路线步数控制在10,000-25,000步，覆盖生态建设、历史文化、流行文化三大主题</p>
+          </div>
+
+          <!-- 北蔡基地周边路线 -->
+          <div class="mb-12">
+            <h3 class="text-2xl font-serif font-semibold text-primary mb-6 flex items-center">
+              <i class="fas fa-home text-sage mr-3"></i>北蔡基地周边路线（3条）
+            </h3>
+            <div class="grid lg:grid-cols-3 gap-6">
+              <div class="bg-sage/10 p-6 rounded-xl border border-sage/20">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线一：楔形绿地核心探访线</h4>
+                  <span class="bg-sage text-white px-3 py-1 rounded-full text-xs font-medium">15,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-route text-sage mr-2 w-4"></i>
+                    <span>莲溪路 → 绿科路 → 楔形绿地B片区 → 御霞路Parklet</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-clock text-sage mr-2 w-4"></i>
+                    <span>约9公里，含停留4-5小时</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-leaf text-sage mr-2 w-4"></i>
+                    <span>生态建设深度观察，慢行系统实测</span>
+                  </div>
+                </div>
+                <div class="mt-4 bg-white p-3 rounded">
+                  <p class="text-xs text-stone"><strong>技术准备：</strong>《北蔡楔形绿地控制性详细规划》、G11-11地块批复文件、2023-2025年卫星影像对比</p>
+                </div>
+                <div class="mt-3 bg-yellow-50 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>最佳时段：</strong>上午9:00-11:00（光线适宜，施工活动尚未高峰）</p>
+                </div>
+              </div>
+
+              <div class="bg-blue-50 p-6 rounded-xl border border-blue-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线二：北蔡老街与社区更新线</h4>
+                  <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">12,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-route text-blue-500 mr-2 w-4"></i>
+                    <span>莲溪老街 → 莲溪公园 → 北蔡老年公园 → 鹏海居住区</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-clock text-blue-500 mr-2 w-4"></i>
+                    <span>约7公里，含停留3-4小时</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-heart text-blue-500 mr-2 w-4"></i>
+                    <span>本地生活记忆，老龄化友好设施</span>
+                  </div>
+                </div>
+                <div class="mt-4 bg-white p-3 rounded">
+                  <p class="text-xs text-stone"><strong>特色标签：</strong>轻松日标准，适合陪同长辈，社区微更新观察</p>
+                </div>
+              </div>
+
+              <div class="bg-purple-50 p-6 rounded-xl border border-purple-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线三：御桥-张江跨界探索线</h4>
+                  <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">18,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-route text-purple-500 mr-2 w-4"></i>
+                    <span>御桥地铁站 → 金科路 → 张江科学城核心区 → 张衡公园</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-clock text-purple-500 mr-2 w-4"></i>
+                    <span>约11公里，含停留5-6小时</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-microchip text-purple-500 mr-2 w-4"></i>
+                    <span>城乡结合部变迁，科创园区日常</span>
+                  </div>
+                </div>
+                <div class="mt-4 bg-white p-3 rounded">
+                  <p class="text-xs text-stone"><strong>体力等级：</strong>中等偏高，建议携带能量补给</p>
+                </div>
+                <div class="mt-3 bg-green-50 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>空间梯度：</strong>北蔡居住社区 → 御桥TOD → 金科路创新走廊 → 张衡公园社区</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 浦东中部文化线 -->
+          <div class="mb-12">
+            <h3 class="text-2xl font-serif font-semibold text-primary mb-6 flex items-center">
+              <i class="fas fa-tree text-sage mr-3"></i>浦东中部文化线（3条）
+            </h3>
+            <div class="grid lg:grid-cols-3 gap-6">
+              <div class="bg-green-50 p-6 rounded-xl border border-green-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线四：世纪公园-博物馆环线</h4>
+                  <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium">16,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-subway text-green-500 mr-2 w-4"></i>
+                    <span>花木地铁站（7号线）</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-route text-green-500 mr-2 w-4"></i>
+                    <span>世纪公园7号门 → 环湖步道 → 上海科技馆 → 浦东图书馆</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-clock text-green-500 mr-2 w-4"></i>
+                    <span>约10公里，含停留4-5小时</span>
+                  </div>
+                </div>
+                <div class="mt-4 bg-white p-3 rounded">
+                  <p class="text-xs text-stone"><strong>弹性设计：</strong>科技馆闭馆时，替换为&#34;公园+图书馆&#34;压缩版（约12,000步）</p>
+                </div>
+                <div class="mt-3 bg-sage/20 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>冬季景观：</strong>2月初蜡梅、茶梅初花期，建议顺时针环湖</p>
+                </div>
+              </div>
+
+              <div class="bg-orange-50 p-6 rounded-xl border border-orange-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线五：双子山-世博滨江登山线</h4>
+                  <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-medium">18,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-subway text-orange-500 mr-2 w-4"></i>
+                    <span>东方体育中心地铁站（6/8/11号线）</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-route text-orange-500 mr-2 w-4"></i>
+                    <span>双子山主峰（48米）→ 次峰（37米）→ 世博公园 → 后滩公园</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-clock text-orange-500 mr-2 w-4"></i>
+                    <span>约11公里，含停留5-6小时</span>
+                  </div>
+                </div>
+                <div class="mt-4 bg-accent/10 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>关键提示：</strong>提前预约（&#34;上海世博文化公园&#34;小程序），推荐14:00-16:00时段</p>
+                </div>
+                <div class="mt-3 bg-blue-50 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>体验悖论：</strong>登山耗时10-15分钟，定位为&#34;观景平台&#34;而非&#34;登山挑战&#34;</p>
+                </div>
+              </div>
+
+              <div class="bg-blue-50 p-6 rounded-xl border border-blue-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线六：浦江东岸绿道望江驿线</h4>
+                  <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">20,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-subway text-blue-500 mr-2 w-4"></i>
+                    <span>民生路地铁站（6/18号线）</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-route text-blue-500 mr-2 w-4"></i>
+                    <span>望江驿00号 → 沿江步道 → 望江驿05号（约5公里）</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-clock text-blue-500 mr-2 w-4"></i>
+                    <span>约12公里，含停留4-5小时</span>
+                  </div>
+                </div>
+                <div class="mt-4 bg-white p-3 rounded">
+                  <p class="text-xs text-stone"><strong>设施密度：</strong>每1公里1座望江驿，本段覆盖6座</p>
+                </div>
+                <div class="mt-3 bg-sage/20 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>弹性设计：</strong>轻松版（00-02号，约6,000步）、标准版（00-05号，约18,000步）、挑战版（00-10号至陆家嘴，约25,000步）</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 浦西经典历史线 -->
+          <div class="mb-12">
+            <h3 class="text-2xl font-serif font-semibold text-primary mb-6 flex items-center">
+              <i class="fas fa-landmark text-accent mr-3"></i>浦西经典历史线（4条）
+            </h3>
+            <div class="grid lg:grid-cols-4 gap-6">
+              <div class="bg-red-50 p-6 rounded-xl border border-red-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线七：豫园-南京路-Chikawa主题线</h4>
+                  <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-medium">15,000步</span>
+                </div>
+                <div class="space-y-2 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-subway text-red-500 mr-2 w-4"></i>
+                    <span>南京东路地铁站（2/10号线）</span>
+                  </div>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• 豫园（九曲桥、城隍庙）40分钟</div>
+                    <div>• 南京东路步行街30分钟</div>
+                    <div class="font-medium text-pink-600">• Chikawa旗舰店60-90分钟</div>
+                    <div>• 外滩（可选）30分钟</div>
+                  </div>
+                </div>
+                <div class="mt-4 bg-pink-50 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>时间分配：</strong>建议工作日上午10:00-11:00到访Chikawa，规避排队</p>
+                </div>
+              </div>
+
+              <div class="bg-blue-50 p-6 rounded-xl border border-blue-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线八：北外滩滨江近代建筑线</h4>
+                  <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">12,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-subway text-blue-500 mr-2 w-4"></i>
+                    <span>国际客运中心地铁站（12号线）</span>
+                  </div>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• 上海邮政博物馆 → 乍浦路桥</div>
+                    <div>• 外白渡桥 → 北外滩滨江绿地</div>
+                    <div>• 白玉兰广场 → 返回</div>
+                  </div>
+                </div>
+                <div class="mt-4 bg-green-50 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>高置信度路线：</strong>获Trip.com完整攻略支撑，信息最完整</p>
+                </div>
+                <div class="mt-3 bg-yellow-50 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>精确机位：</strong>邮政博物馆&#34;上海之门&#34;、乍浦路桥&#34;法师桥&#34;等</p>
+                </div>
+              </div>
+
+              <div class="bg-purple-50 p-6 rounded-xl border border-purple-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线九：法租界衡复风貌深度线</h4>
+                  <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">16,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-subway text-purple-500 mr-2 w-4"></i>
+                    <span>陕西南路地铁站（1/10/12号线）</span>
+                  </div>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• 思南路（周公馆、孙中山故居）</div>
+                    <div>• 复兴中路 → 新天地</div>
+                    <div>• 马当路 → 田子坊 → 返回</div>
+                  </div>
+                </div>
+                <div class="mt-4 bg-sage/20 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>核心主题：</strong>法租界历史街区，石库门里弄，红色记忆，商业更新</p>
+                </div>
+              </div>
+
+              <div class="bg-green-50 p-6 rounded-xl border border-green-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线十：徐家汇源文化溯源线</h4>
+                  <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium">14,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-subway text-green-500 mr-2 w-4"></i>
+                    <span>徐家汇地铁站（1/9/11号线）</span>
+                  </div>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• 徐家汇书院 → 圣依纳爵主教座堂</div>
+                    <div>• 光启公园 → 交通大学徐汇校区</div>
+                    <div>• 徐家汇公园 → 美罗城 → 返回</div>
+                  </div>
+                </div>
+                <div class="mt-4 bg-blue-50 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>预约提示：</strong>徐家汇书院、交大校区可能需要提前预约或登记</p>
+                </div>
+                <div class="mt-3 bg-yellow-50 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>借鉴路线：</strong>2025年12月发布的&#34;城市博物行&#34;CityHike线路</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 扩展区域探索线 -->
+          <div class="mb-12">
+            <h3 class="text-2xl font-serif font-semibold text-primary mb-6 flex items-center">
+              <i class="fas fa-expand-arrows-alt text-blue-500 mr-3"></i>扩展区域探索线（3条）
+            </h3>
+            <div class="grid lg:grid-cols-3 gap-6">
+              <div class="bg-purple-50 p-6 rounded-xl border border-purple-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线十一：五角场-大学路学术文艺线</h4>
+                  <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">13,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-subway text-purple-500 mr-2 w-4"></i>
+                    <span>江湾体育场地铁站（10号线）</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-route text-purple-500 mr-2 w-4"></i>
+                    <span>江湾体育场 → 大学路 → 创智天地 → 复旦大学</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-clock text-purple-500 mr-2 w-4"></i>
+                    <span>约8公里，含停留3-4小时</span>
+                  </div>
+                </div>
+                <div class="mt-4 bg-white p-3 rounded">
+                  <p class="text-xs text-stone"><strong>核心主题：</strong>高校商圈氛围，年轻文创聚集，历史体育场</p>
+                </div>
+                <div class="mt-3 bg-sage/20 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>关键观察：</strong>江湾体育场&#34;大上海计划&#34;遗存保护利用、大学路&#34;慢速街道&#34;设计</p>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线十二：花桥近郊预访线</h4>
+                  <span class="bg-gray-500 text-white px-3 py-1 rounded-full text-xs font-medium">10,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-car text-gray-500 mr-2 w-4"></i>
+                    <span>北蔡家中（自驾或地铁11号线转乘，约70分钟）</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-route text-gray-500 mr-2 w-4"></i>
+                    <span>花桥地铁站 → 花桥公园 → 中央公园 → 商务城</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-clock text-gray-500 mr-2 w-4"></i>
+                    <span>约6公里，含停留2-3小时</span>
+                  </div>
+                </div>
+                <div class="mt-4 bg-white p-3 rounded">
+                  <p class="text-xs text-stone"><strong>核心主题：</strong>母亲未来居住环境考察，沪苏交界新城风貌</p>
+                </div>
+                <div class="mt-3 bg-blue-50 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>特殊安排：</strong>功能性出行，非深度探索，与家庭活动组合</p>
+                </div>
+              </div>
+
+              <div class="bg-blue-50 p-6 rounded-xl border border-blue-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线十三：陆家嘴金融城地标线</h4>
+                  <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">12,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-subway text-blue-500 mr-2 w-4"></i>
+                    <span>陆家嘴地铁站（2/14号线）</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-route text-blue-500 mr-2 w-4"></i>
+                    <span>陆家嘴中心绿地 → 三件套 → 东方明珠 → 滨江大道</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-clock text-blue-500 mr-2 w-4"></i>
+                    <span>约7公里，含停留3-4小时</span>
+                  </div>
+                </div>
+                <div class="mt-4 bg-white p-3 rounded">
+                  <p class="text-xs text-stone"><strong>登高选项：</strong>上海中心118层（180元）&gt; 环球金融中心100层（150元）&gt; 金茂大厦88层（120元）&gt; 东方明珠（180元）</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 特色主题组合线 -->
+          <div class="mb-12">
+            <h3 class="text-2xl font-serif font-semibold text-primary mb-6 flex items-center">
+              <i class="fas fa-puzzle-piece text-orange-500 mr-3"></i>特色主题组合线（2条）
+            </h3>
+            <div class="grid lg:grid-cols-2 gap-8">
+              <div class="bg-orange-50 p-6 rounded-xl border border-orange-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线十四：上海小吃寻访专线</h4>
+                  <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-medium">18,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-subway text-orange-500 mr-2 w-4"></i>
+                    <span>豫园地铁站（10/14号线）</span>
+                  </div>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• 南翔馒头店（豫园路）</div>
+                    <div>• 大壶春（四川中路）</div>
+                    <div>• 小杨生煎（吴江路）</div>
+                    <div>• 佳家汤包（黄河路）</div>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-clock text-orange-500 mr-2 w-4"></i>
+                    <span>约11公里，含停留5-6小时</span>
+                  </div>
+                </div>
+                <div class="mt-4 bg-white p-3 rounded">
+                  <p class="text-xs text-stone"><strong>核心主题：</strong>小笼包、生煎、汤包三大品类，老字号与新派对比</p>
+                </div>
+                <div class="mt-3 bg-blue-50 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>方法论：</strong>建立&#34;工艺-口感-环境&#34;三维评价体系</p>
+                </div>
+                <div class="mt-3 bg-accent/10 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>风险提示：</strong>商业信息时效性，建议出发前确认营业状态，准备备选方案</p>
+                </div>
+              </div>
+
+              <div class="bg-teal-50 p-6 rounded-xl border border-teal-200">
+                <div class="flex justify-between items-start mb-4">
+                  <h4 class="text-lg font-medium text-secondary">路线十五：跨江大桥风光线</h4>
+                  <span class="bg-teal-500 text-white px-3 py-1 rounded-full text-xs font-medium">22,000步</span>
+                </div>
+                <div class="space-y-3 text-sm text-stone">
+                  <div class="flex items-center">
+                    <i class="fas fa-subway text-teal-500 mr-2 w-4"></i>
+                    <span>南浦大桥地铁站（4号线）</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-route text-teal-500 mr-2 w-4"></i>
+                    <span>南浦大桥滨江 → 陆家嘴 → 东昌路渡口 → 轮渡 → 滨江步行</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-clock text-teal-500 mr-2 w-4"></i>
+                    <span>约14公里，含停留5-6小时</span>
+                  </div>
+                </div>
+                <div class="mt-4 bg-white p-3 rounded">
+                  <p class="text-xs text-stone"><strong>核心主题：</strong>大桥工程景观，轮渡体验，两岸对比</p>
+                </div>
+                <div class="mt-3 bg-blue-50 p-3 rounded">
+                  <p class="text-xs text-stone"><strong>轮渡信息：</strong>东昌路-金陵东路航线，2元，约10分钟，运营时间07:15-22:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Decision Support -->
+      <section id="decision-support" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8 max-w-6xl">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-serif font-bold text-primary mb-4">路线选择决策支持</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-sage to-transparent mx-auto"></div>
+          </div>
+
+          <div class="grid lg:grid-cols-3 gap-8">
+            <!-- 空气质量调整 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+              <h3 class="text-xl font-serif font-semibold text-primary mb-4 flex items-center">
+                <i class="fas fa-wind text-sage mr-3"></i>按天气与空气质量
+              </h3>
+
+              <div class="space-y-4">
+                <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                  <div class="flex items-center mb-2">
+                    <span class="bg-green-500 text-white px-2 py-1 rounded text-xs font-medium mr-2">0-50 优</span>
+                    <span class="text-green-700 font-medium text-sm">空气质量令人满意</span>
+                  </div>
+                  <p class="text-xs text-stone">优先路线：<strong>路线一、五、六、八、十五</strong>（开阔通风区域）</p>
+                </div>
+
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <div class="flex items-center mb-2">
+                    <span class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-medium mr-2">51-100 良</span>
+                    <span class="text-blue-700 font-medium text-sm">空气质量可接受</span>
+                  </div>
+                  <p class="text-xs text-stone">优先路线：<strong>路线四、七、九、十</strong>（绿量较高或室内-户外结合）</p>
+                </div>
+
+                <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                  <div class="flex items-center mb-2">
+                    <span class="bg-yellow-500 text-white px-2 py-1 rounded text-xs font-medium mr-2">101-150 轻度</span>
+                    <span class="text-yellow-700 font-medium text-sm">敏感人群症状加剧</span>
+                  </div>
+                  <p class="text-xs text-stone">优先路线：<strong>路线三、十三</strong>（以室内为主，缩短户外）</p>
+                </div>
+
+                <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                  <div class="flex items-center mb-2">
+                    <span class="bg-red-500 text-white px-2 py-1 rounded text-xs font-medium mr-2">&gt;150 中度</span>
+                    <span class="text-red-700 font-medium text-sm">健康风险显著</span>
+                  </div>
+                  <p class="text-xs text-stone">建议：暂停户外，纯室内替代（商场步行、健身房）</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 体力状态分级 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+              <h3 class="text-xl font-serif font-semibold text-primary mb-4 flex items-center">
+                <i class="fas fa-running text-accent mr-3"></i>按体力状态分级
+              </h3>
+
+              <div class="space-y-4">
+                <div class="bg-sage/10 p-4 rounded-lg">
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-leaf text-sage mr-2"></i>
+                    <span class="font-medium text-secondary">轻松日</span>
+                    <span class="text-xs text-stone ml-auto">10,000-14,000步</span>
+                  </div>
+                  <p class="text-xs text-stone mb-2">平坦地形，设施完善，随时可中止</p>
+                  <div class="space-y-1 text-xs text-stone">
+                    <div>• <strong>路线二：</strong>北蔡老街与社区更新线</div>
+                    <div>• <strong>路线八：</strong>北外滩滨江近代建筑线</div>
+                    <div>• <strong>路线十：</strong>徐家汇源文化溯源线</div>
+                    <div>• <strong>路线十二：</strong>花桥近郊预访线</div>
+                    <div>• <strong>路线十三：</strong>陆家嘴金融城地标线</div>
+                  </div>
+                </div>
+
+                <div class="bg-blue-50 p-4 rounded-lg">
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-walking text-blue-500 mr-2"></i>
+                    <span class="font-medium text-secondary">标准日</span>
+                    <span class="text-xs text-stone ml-auto">15,000-18,000步</span>
+                  </div>
+                  <p class="text-xs text-stone mb-2">中等距离，1-2个主题锚点</p>
+                  <div class="space-y-1 text-xs text-stone">
+                    <div>• <strong>路线一：</strong>楔形绿地核心探访线</div>
+                    <div>• <strong>路线四：</strong>世纪公园-博物馆环线</div>
+                    <div>• <strong>路线五：</strong>双子山-世博滨江登山线</div>
+                    <div>• <strong>路线七：</strong>豫园-南京路-Chikawa主题线</div>
+                    <div>• <strong>路线九：</strong>法租界衡复风貌深度线</div>
+                    <div>• <strong>路线十一：</strong>五角场-大学路学术文艺线</div>
+                    <div>• <strong>路线十四：</strong>上海小吃寻访专线</div>
+                  </div>
+                </div>
+
+                <div class="bg-accent/10 p-4 rounded-lg">
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-mountain text-accent mr-2"></i>
+                    <span class="font-medium text-secondary">挑战日</span>
+                    <span class="text-xs text-stone ml-auto">19,000-25,000步</span>
+                  </div>
+                  <p class="text-xs text-stone mb-2">长距离，多节点，需提前规划补给</p>
+                  <div class="space-y-1 text-xs text-stone">
+                    <div>• <strong>路线三：</strong>御桥-张江跨界探索线</div>
+                    <div>• <strong>路线六：</strong>浦江东岸绿道望江驿线</div>
+                    <div>• <strong>路线十五：</strong>跨江大桥风光线</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 陪伴对象调整 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+              <h3 class="text-xl font-serif font-semibold text-primary mb-4 flex items-center">
+                <i class="fas fa-users text-blue-500 mr-3"></i>按陪伴对象调整
+              </h3>
+
+              <div class="space-y-4">
+                <div class="bg-purple-50 p-4 rounded-lg">
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-user text-purple-500 mr-2"></i>
+                    <span class="font-medium text-secondary">独自探索</span>
+                  </div>
+                  <p class="text-xs text-stone mb-2">主题深度，节奏自主，灵活停留时间，摄影友好</p>
+                  <div class="space-y-1 text-xs text-stone">
+                    <div>• <strong>路线一：</strong>楔形绿地深度观察</div>
+                    <div>• <strong>路线三：</strong>张江跨界探索</div>
+                    <div>• <strong>路线六：</strong>东岸绿道风光</div>
+                    <div>• <strong>路线十四：</strong>小吃寻访专线</div>
+                  </div>
+                </div>
+
+                <div class="bg-green-50 p-4 rounded-lg">
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-user-friends text-green-500 mr-2"></i>
+                    <span class="font-medium text-secondary">陪同长辈</span>
+                  </div>
+                  <p class="text-xs text-stone mb-2">设施完善，节奏舒缓，缩短距离，增加休息点</p>
+                  <div class="space-y-1 text-xs text-stone">
+                    <div>• <strong>路线二：</strong>北蔡老街社区更新</div>
+                    <div>• <strong>路线七：</strong>豫园-南京路文化</div>
+                    <div>• <strong>路线十二：</strong>花桥近郊预访</div>
+                  </div>
+                </div>
+
+                <div class="bg-pink-50 p-4 rounded-lg">
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-users text-pink-500 mr-2"></i>
+                    <span class="font-medium text-secondary">家庭聚会</span>
+                  </div>
+                  <p class="text-xs text-stone mb-2">地标性强，互动体验，儿童友好节点</p>
+                  <div class="space-y-1 text-xs text-stone">
+                    <div>• <strong>路线四：</strong>世纪公园-博物馆</div>
+                    <div>• <strong>路线五：</strong>双子山-世博滨江</div>
+                    <div>• <strong>路线十三：</strong>陆家嘴金融城</div>
+                  </div>
+                  <p class="text-xs text-pink-600 mt-2">亮点：Chikawa店、双子山、科技馆等儿童友好节点</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Practical Info -->
+      <section id="practical-info" class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-8 max-w-6xl">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-serif font-bold text-primary mb-4">实用信息附录</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-sage to-transparent mx-auto"></div>
+          </div>
+
+          <div class="grid lg:grid-cols-3 gap-8">
+            <!-- 交通衔接 -->
+            <div class="bg-gradient-to-br from-blue-50 to-sage/10 p-6 rounded-xl border border-blue-200">
+              <h3 class="text-xl font-serif font-semibold text-primary mb-4 flex items-center">
+                <i class="fas fa-subway text-blue-500 mr-3"></i>交通衔接要点
+              </h3>
+
+              <div class="space-y-4">
+                <div class="bg-white p-4 rounded-lg border">
+                  <h4 class="font-medium text-secondary text-sm mb-2">北蔡地铁网络</h4>
+                  <div class="space-y-1 text-xs text-stone">
+                    <div>• <strong>7号线：</strong>花木、龙阳路方向</div>
+                    <div>• <strong>13号线：</strong>张江科学城方向</div>
+                    <div>• <strong>18号线：</strong>御桥TOD开发</div>
+                  </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg border">
+                  <h4 class="font-medium text-secondary text-sm mb-2">跨江方式</h4>
+                  <div class="space-y-1 text-xs text-stone">
+                    <div>• <strong>地铁隧道：</strong>2/4/7/8/14号线（3-5分钟）</div>
+                    <div>• <strong>轮渡：</strong>东昌路-金陵东路（2元，10分钟）</div>
+                    <div>• <strong>大桥公交：</strong>隧道三线等（15-30分钟）</div>
+                  </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg border">
+                  <h4 class="font-medium text-secondary text-sm mb-2">花桥衔接</h4>
+                  <div class="space-y-1 text-xs text-stone">
+                    <div>• <strong>地铁11号线：</strong>延伸段，沪苏通勤</div>
+                    <div>• 约50分钟至徐家汇，约90分钟至迪士尼</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 关键设施查询 -->
+            <div class="bg-gradient-to-br from-sage/10 to-green-50 p-6 rounded-xl border border-sage/20">
+              <h3 class="text-xl font-serif font-semibold text-primary mb-4 flex items-center">
+                <i class="fas fa-info-circle text-sage mr-3"></i>关键设施查询
+              </h3>
+
+              <div class="space-y-4">
+                <div class="bg-white p-4 rounded-lg border">
+                  <h4 class="font-medium text-secondary text-sm mb-2">望江驿分布</h4>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• <strong>查询渠道：</strong>&#34;浦东发布&#34;微信公众号</div>
+                    <div>• <strong>分布：</strong>24座，间距约1公里</div>
+                    <div>• <strong>服务：</strong>饮水、休息、卫生间等基础服务</div>
+                  </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg border">
+                  <h4 class="font-medium text-secondary text-sm mb-2">楔形绿地开放状态</h4>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• <strong>查询渠道：</strong>上海市住建委官网、&#34;12345&#34;市民服务热线</div>
+                    <div>• <strong>注意事项：</strong>部分区域施工中，建议提前确认</div>
+                  </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg border">
+                  <h4 class="font-medium text-secondary text-sm mb-2">博物馆春节开放</h4>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• <strong>查询渠道：</strong>各馆官方微信公众号、&#34;随申办&#34;APP</div>
+                    <div>• <strong>重点关注：</strong>上海科技馆、博物馆东馆</div>
+                  </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg border">
+                  <h4 class="font-medium text-secondary text-sm mb-2">Chikawa旗舰店</h4>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• <strong>查询渠道：</strong>官方小程序、小红书实时动态</div>
+                    <div>• <strong>注意事项：</strong>节假日可能限流，建议错峰</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 安全与健康 -->
+            <div class="bg-gradient-to-br from-accent/10 to-red-50 p-6 rounded-xl border border-accent/20">
+              <h3 class="text-xl font-serif font-semibold text-primary mb-4 flex items-center">
+                <i class="fas fa-shield-alt text-accent mr-3"></i>安全与健康提示
+              </h3>
+
+              <div class="space-y-4">
+                <div class="bg-white p-4 rounded-lg border">
+                  <h4 class="font-medium text-secondary text-sm mb-2 flex items-center">
+                    <i class="fas fa-temperature-low text-blue-500 mr-2"></i>冬季保暖
+                  </h4>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• <strong>分层穿衣：</strong>内层排汗、中层保暖、外层防风</div>
+                    <div>• <strong>重点区域：</strong>滨江区域风大，体感温度低3-5℃</div>
+                    <div>• <strong>配件建议：</strong>围巾、手套、帽子必备</div>
+                  </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg border">
+                  <h4 class="font-medium text-secondary text-sm mb-2 flex items-center">
+                    <i class="fas fa-heartbeat text-red-500 mr-2"></i>步数监测
+                  </h4>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• <strong>记录方式：</strong>手机或智能手表记录</div>
+                    <div>• <strong>心率区间：</strong>减脂目标为最大心率的60-70%</div>
+                    <div>• <strong>计算公式：</strong>220-年龄=最大心率</div>
+                  </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg border">
+                  <h4 class="font-medium text-secondary text-sm mb-2 flex items-center">
+                    <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>运动损伤预防
+                  </h4>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• <strong>渐进加载：</strong>首日从10,000步开始</div>
+                    <div>• <strong>身体评估：</strong>次日根据身体反应调整强度</div>
+                    <div>• <strong>休息间隔：</strong>连续高强度后安排轻松日</div>
+                  </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg border">
+                  <h4 class="font-medium text-secondary text-sm mb-2 flex items-center">
+                    <i class="fas fa-life-ring text-green-500 mr-2"></i>应急方案
+                  </h4>
+                  <div class="text-xs text-stone space-y-1">
+                    <div>• <strong>地铁返回点：</strong>各路线均设计可随时中止</div>
+                    <div>• <strong>必备物品：</strong>充电宝、少量现金、应急联系卡</div>
+                    <div>• <strong>通讯保障：</strong>确保手机电量充足</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 执行建议 -->
+          <div class="mt-12 bg-gradient-to-r from-primary to-secondary p-8 rounded-xl text-white">
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-serif font-bold mb-4">最终执行建议</h3>
+              <div class="w-24 h-1 bg-gradient-to-r from-sage to-transparent mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                <h4 class="text-lg font-medium mb-3 flex items-center">
+                  <i class="fas fa-star text-yellow-400 mr-2"></i>高置信度核心路线
+                </h4>
+                <div class="space-y-2 text-sm">
+                  <div>• <strong>路线八：</strong>北外滩滨江近代建筑线</div>
+                  <div>• <strong>路线一：</strong>楔形绿地核心探访线</div>
+                  <div>• <strong>路线二：</strong>北蔡老街社区更新线</div>
+                </div>
+                <p class="text-xs text-white/80 mt-3">信息最完整，执行风险最低，作为核心保障</p>
+              </div>
+
+              <div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                <h4 class="text-lg font-medium mb-3 flex items-center">
+                  <i class="fas fa-puzzle-piece text-blue-400 mr-2"></i>中等置信度拓展路线
+                </h4>
+                <div class="space-y-2 text-sm">
+                  <div>• <strong>路线四：</strong>世纪公园-博物馆环线</div>
+                  <div>• <strong>路线七：</strong>豫园-南京路-Chikawa主题线</div>
+                </div>
+                <p class="text-xs text-white/80 mt-3">主题拓展，需确认实时开放状态</p>
+              </div>
+
+              <div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                <h4 class="text-lg font-medium mb-3 flex items-center">
+                  <i class="fas fa-compass text-sage mr-2"></i>探索性选择路线
+                </h4>
+                <div class="space-y-2 text-sm">
+                  <div>• <strong>路线三、五、六、九、十一、十五</strong></div>
+                </div>
+                <p class="text-xs text-white/80 mt-3">根据实时兴趣、天气、体力状况灵活选择</p>
+              </div>
+            </div>
+
+            <div class="text-center mt-8">
+              <p class="text-lg font-medium mb-2">采用&#34;3+2+1&#34;执行框架</p>
+              <p class="text-white/80">既确保春节假期的运动目标达成，又为应对信息不确定性和天气变化预留弹性空间</p>
+              <div class="mt-6 bg-sage text-white px-6 py-3 rounded-lg inline-block font-medium">
+                <i class="fas fa-heart mr-2"></i>祝Citywalk愉快，减脂目标顺利实现！
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+          <div class="mb-4">
+            <h3 class="text-xl font-serif font-bold mb-2">上海春节Citywalk路线规划方案</h3>
+            <p class="text-white/80 text-sm">15条精选路线探索生态建设、历史文化与流行文化的城市魅力</p>
+          </div>
+
+          <div class="flex justify-center space-x-6 text-sm text-white/60">
+            <div class="flex items-center">
+              <i class="fas fa-route mr-2"></i>
+              <span>10,000-25,000步/路线</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-leaf mr-2"></i>
+              <span>空气质量响应机制</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-heart mr-2"></i>
+              <span>三级体力分级系统</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/20 text-xs text-white/40">
+            <p>基于2025年最新城市规划与设施信息整理，建议在出行前确认各场馆实时开放状态</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+        // Table of Contents Active Link Management
+        const tocLinks = document.querySelectorAll('.toc-link');
+        const sections = document.querySelectorAll('section[id]');
+        
+        function updateActiveLink() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink(); // Initial call
+        
+        // Smooth scrolling for TOC links
+        tocLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Mobile TOC toggle (if needed)
+        function toggleTOC() {
+            const sidebar = document.querySelector('.toc-sidebar');
+            sidebar.classList.toggle('open');
+        }
+        
+        // Function to handle window resize and adjust layout
+        function handleResize() {
+            const sidebar = document.querySelector('.toc-sidebar');
+            const mainContent = document.querySelector('.content-main');
+            if (window.innerWidth > 1024) {
+                // On large screens, ensure sidebar is visible and content has margin
+                sidebar.classList.remove('open');
+                mainContent.style.marginLeft = '320px';
+            } else {
+                // On small screens, remove left margin from content
+                mainContent.style.marginLeft = '0';
+            }
+        }
+
+        // Initial call to set up the layout
+        handleResize();
+
+        // Add event listener for resize
+        window.addEventListener('resize', handleResize);
+    </script>
+    
+</body></html>
